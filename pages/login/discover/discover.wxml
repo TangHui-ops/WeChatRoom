@@ -1,0 +1,100 @@
+<!--pages/login/discover/discover.wxml-->
+<view class="container">
+
+  <!-- 朋友圈 -->
+  <view class="onelist">
+    <view class="imglist">
+      <image src="../../../image/discover/pengyouquan.png" class="serve" />
+    </view>
+    <view class="oneText">朋友圈</view>
+    <view class="arrow"></view>
+  </view>
+ 
+  <!-- 视频号、直播 -->
+  <view class="twolists">
+    <!-- 视频号 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/shipinhao.png" class="collect" />
+      <view class="shoucangText">视频号</view>
+      <view class="arrow"></view>
+    </view>
+
+    <!-- 直播 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/zhibo.png" class="collect" />
+      <view class="shoucangText">直播</view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+     
+  <!-- 扫一扫、摇一摇 -->
+  <view class="twolists">
+    <!-- 扫一扫 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/saoyisao.png" class="collect" />
+      <view class="shoucangText">扫一扫</view>
+      <view class="arrow"></view>
+    </view>
+
+    <!-- 摇一摇 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/yaoyiyao.png" class="collect" />
+      <view class="shoucangText">摇一摇</view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+
+  <!-- 看一看、搜一搜 -->
+  <view class="twolists">
+    <!-- 看一看 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/kanyikan.png" class="collect" />
+      <view class="shoucangText">看一看</view>
+      <view class="arrow"></view>
+    </view>
+
+    <!-- 搜一搜 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/souyisou.png" class="collect" />
+      <view class="shoucangText">搜一搜</view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+
+  <!-- 附近 -->
+  <view class="onelist">
+    <view class="imglist">
+      <image src="../../../image/discover/fujin.png" class="serve" />
+    </view>
+    <view class="oneText">附近</view>
+    <view class="arrow"></view>
+  </view>
+
+    <!-- 购物、游戏 -->
+  <view class="twolists">
+    <!-- 购物 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/gouwu.png" class="collect" />
+      <view class="shoucangText">购物</view>
+      <view class="arrow"></view>
+    </view>
+
+    <!-- 游戏 -->
+    <view class="shouCang">
+      <image src="../../../image/discover/youxi.png" class="collect" />
+      <view class="shoucangText">游戏</view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+    
+  
+  
+  <!-- 小程序 -->
+  <view class="onelist">
+    <view class="imglist">
+      <image src="../../../image/discover/xiaochengxv.png" class="serve" />
+    </view>
+    <view class="oneText">小程序</view>
+    <view class="arrow"></view>
+  </view>
+</view>

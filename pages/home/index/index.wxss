@@ -1,0 +1,109 @@
+/**index.wxss**/
+.container{
+  font-family: cursive;
+  font-size: 40rpx;
+  color: black;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+/* 头像 */
+.userinfo-avatar {
+  overflow: hidden;
+  width: 162rpx;
+  height: 162rpx;
+  margin: 20rpx;
+  /* border-radius: 50%; */
+  margin-top: -100rpx;
+}
+
+.usermotto .page-section{
+  display: flex;
+  flex-direction: row;
+  margin-top: 60rpx;
+  /* border-bottom: black 4rpx solid; */
+  padding-bottom: 10px;
+}
+
+/* 中间部分 */
+/* 文本框 */
+.usermotto .page-section .weui-cell_input{
+  /* background-color: white; */
+  margin-left: 50rpx;
+  box-sizing: border-box;
+}
+.usermotto .password{
+  margin-top: -40rpx;
+  border-bottom: solid #aaa 2rpx;
+}
+.usermotto .verification{
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  color: blue;
+}
+.usermotto .button-sp-area .mini-btn{
+  width: 45%;
+  margin-top: 100rpx;
+}
+
+/* 底部 */
+.findRetrieving {
+  /* border: 2px black solid; */
+  width: 100%;
+  position: fixed;
+  bottom:0rpx;
+  display: flex;
+  margin-left: 200rpx;
+  font-size: 35rpx;
+  margin-bottom: 55rpx;
+  color: blue;
+}
+.findRetrieving .frost{
+  padding-left: 50rpx;
+}
+.findRetrieving .more{
+  padding-left: 50rpx;
+}
+.findRetrieving span{
+  padding-left: 40rpx;
+  color: #aaa;
+}
+
+/*模态框*/
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+

@@ -1,0 +1,83 @@
+/* pages/login/homepage/homepage.wxss */
+.container{
+  font-family: cursive;
+  width: 100%;
+  height: 100%; 
+  /* background-color: #aaa; */
+}
+/* 个人信息 */
+.personinfo{
+  width: 100%;
+  height: 200rpx;
+  margin-top: -180rpx;
+  border-bottom: 20rpx #e6e6e6 solid;
+}
+.userinfo-avatar {  /* 头像 */
+  width: 132rpx;
+  height: 132rpx;
+  float: left;
+  margin-left: 40rpx;
+  /* border-radius: 50%; */
+}
+.personinfo .nameinfo{
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.personinfo .nameinfo .weixinming{  /*名称*/
+  font-weight: bold;
+  font-size: 57rpx;
+}
+.personinfo .nameinfo .weixinhao{  /*微信号*/
+  font-size: 35rpx;
+  color: #aaaaaa;
+  margin-top: 30rpx;
+}
+
+/* 服务 */
+.fuwu{
+  width: 100%;
+  height: 85rpx;
+  border-bottom: 20rpx #e6e6e6 solid;
+}
+.fuwu .serve{
+  width: 55rpx;
+  height: 55rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.fuwu .fuwuText{
+  margin-left: 130rpx;
+  margin-top: -57rpx;
+}
+
+.zasui{
+  width: 100%;
+  border-bottom: 20rpx solid #e6e6e6;
+}
+.zasui .collect{
+  width: 55rpx;
+  height: 55rpx;
+}
+.zasui .shouCang{
+  height: 85rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+}
+.zasui .shoucangText{
+  margin-left: 83rpx;
+  margin-top: -57rpx;
+}
+
+/* 右侧箭头 */
+.arrow{
+  width: 20rpx;
+  height: 18rpx;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  transform: rotate(45deg);
+  font-weight: bold;
+  float: right;
+  margin-right: 55rpx;
+  margin-top: -30rpx;
+}

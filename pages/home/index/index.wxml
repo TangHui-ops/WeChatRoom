@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <!-- <open-data type="userNickName"></open-data> -->
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+    </block>
+  </view>
+  <view class="usermotto">
+    <form bindsubmit="bindSure"> 
+      <!-- 输入手机号码 -->
+      <view class="page-section">
+        <view class="weui-cells__title" >手机号码</view>
+        <view class="weui-cell weui-cell_input">
+          <!-- placeholder="最大输入长度为11" -->
+          <input class="weui-input" name="registerCell" bindinput="inpt_tel" type="number" maxlength="11" placeholder="请输入手机号" 
+            placeholder-style="font-family: cursive;font-size: 40rpx;" /> 
+        </view>
+      </view>
+      <!-- <text class="user-motto">{{motto}}</text> -->
+      <!-- 输入密码 -->
+      <view class="password">
+        <view class="page-section">
+          <view class="weui-cells__title" >
+            <text decode="{{true}}">密&ensp;&ensp;&ensp;&ensp;码</text>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="registerPass" bindinput="inpt_pass" type="password" placeholder="请输入密码" 
+              placeholder-style="font-family: cursive;font-size: 40rpx;" /> 
+          </view>
+        </view>
+      </view>
+      <view class="verification" bindtap="bindVerify">用短信验证码登录</view>
+      <view class="button-sp-area">
+        <button class="mini-btn" type="primary" form-type="submit">登录</button>
+      </view>
+     </form> 
+  </view>
+  <view class="findRetrieving">
+    <view class="findpass" bindtap="bindFindpass">找回密码</view><span>|</span>
+    <view class="frost" bindtap="bindFrost">紧急冻结</view><span>|</span>
+    <view class="simulated">
+      <!-- <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+        <view class="modals-cancel" bindtap="hideModal"></view>
+        <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}"></view>
+      </view> -->
+      <view class="more" bindtap="bindMore">更多</view> 
+      <!--默认action-sheet为隐藏，由button触发-->
+      <view class="ActionSheet" style="color: black;">
+        <action-sheet bindchange="actionsheetChange" hidden="{{showActionsheet}}">
+          <block wx:for="{{groups}}" > 
+            <action-sheet-item bindtap="itemTap" data-name="{{item.name}}" 
+              data-id="{{item.id}}">{{item.name}}</action-sheet-item>
+          </block>
+          <action-sheet-cancel >取消</action-sheet-cancel>
+        </action-sheet>
+      </view>  
+    </view>
+  </view>
+</view>

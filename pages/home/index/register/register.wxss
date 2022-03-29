@@ -1,0 +1,53 @@
+/* pages/home/more/more.wxss */
+.container{
+  margin: 0 ;
+  padding: 0 ;
+  font-family: cursive;
+}
+.title{
+  font-size: 57rpx;
+  margin-top: 50rpx;
+}
+.container image{
+  width: 145rpx;
+  height: 145rpx;
+  margin-left: 39%;
+  margin-top: 50rpx;
+  padding-bottom: 50rpx;
+}
+.container text{
+  display: block;
+  float: left;
+}
+text{
+  margin-top: 10rpx;
+}
+.nickName,.guojia,.shoujihaoma,.mima{
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  padding-right: 40rpx;
+  border-bottom: solid rgb(129, 129, 129) 2rpx;
+}
+input{
+  display: inline-block;
+  margin-left: 40rpx;
+}
+
+.container .zhuce{
+  width: 90%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #aaa;
+  margin-top: 90rpx;
+  margin-left: 35rpx;
+}
+.container .zhuce .rjian{
+  color:blue;
+}
+button{
+  width: 50%;
+  margin-top: 40rpx;
+}
+radio{ 
+  transform:scale(.6)  
+}

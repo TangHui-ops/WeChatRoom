@@ -1,0 +1,35 @@
+<!--pages/home/more/more.wxml-->
+<view class="container">
+  <text class="title">手机号注册</text>
+  <form bindsubmit="bindSure">
+    <view>
+      <image class= "show-image" name="registerPhoto" bindtap="gotoShow" mode="aspectFitf"
+         src="{{registerPhoto}}"></image>
+    </view>
+    <view class="nickName">
+      <text>昵称</text>
+      <input class="inputName" name="registerNickname" bindinput="inputName" type="text"
+        placeholder-style="font-family: cursive;" placeholder="例如：陈晨" />
+    </view>
+    <view class="guojia">
+      <text>国家/地区</text>
+      <input class="inputState" name="registerState" bindinput="inputState"
+        placeholder-style="font-family: cursive;" placeholder="中国大陆（+86）" />
+    </view>
+    <view class="shoujihaoma">
+      <text>手机号</text>
+      <input class="inputCell" name="registerCell" bindinput="inputCell" type="number" maxlength="12"
+        placeholder-style="font-family: cursive;" placeholder="请填写手机号" />
+    </view>
+    <view class="mima" >
+      <text>密码</text>
+        <input class="inptPass" name="registerPass" bindinput="inptPass" type="password"
+          placeholder-style="font-family: cursive;" placeholder="填写密码"/> 
+    </view>
+    <view class="zhuce">
+      <radio bindtap='radioClick' checked="{{radioCheck}}"/>
+        我已阅读并同意<span class="rjian">《软件许可及服务协议》</span>本页面收集的信息仅用于注册账号
+    </view>
+    <button class="mini-btn" disabled='{{disabled}}' type="primary" form-type="submit">同意并继续</button>
+  </form>
+</view>

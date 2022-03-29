@@ -1,0 +1,56 @@
+/* pages/login/discover/discover.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  margin-top: -190rpx;
+}
+.container .onelist{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  border-bottom: 20rpx #e6e6e6 solid;
+}
+.container .onelist .serve{
+  margin-left: 40rpx;
+}
+.container .oneText{
+  margin-left: 125rpx;
+  margin-top: -57rpx;
+}
+
+.container .twolists{
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 20rpx solid #e6e6e6;
+}
+.container .shouCang{
+  margin-top: 38rpx;
+  margin-left: 40rpx;
+}
+.container .shoucangText{
+  width: 100%;
+  margin-left: 83rpx;
+  margin-top: -57rpx;
+  
+}
+
+
+
+
+image{
+  width: 55rpx;
+  height: 55rpx;
+}
+/* 右侧箭头 */
+.arrow{
+  width: 20rpx;
+  height: 18rpx;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  transform: rotate(45deg);
+  font-weight: bold;
+  float: right;
+  margin-right: 55rpx;
+  margin-top: -30rpx;
+}

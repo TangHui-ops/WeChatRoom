@@ -1,0 +1,28 @@
+<!--pages/message/message.wxml-->
+<!-- <view class="message" wx:for="{{messagelist}}" wx:key="index" > 
+  <view class="messageListId" data-messageListId='{{item.messageListId}}' bindtap="handleDetail">
+    <image src="{{item.messagePattern}}" class="messagePattern"/>
+    <view class="list">
+	    <view class="messageHeadline">{{item.messageHeadline}}</view>
+      <view class="messageContent">{{item.messageContent}}</view>
+      <view class="messageSt">{{item.messageSt}}:{{item.messageIcon}}</view>
+    </view>
+  </view>
+</view> -->
+
+<view class="messageInfo">
+  <block wx:for="{{messagelist}}" wx:key="index">
+    <view class="messageListId" data-messageListId='{{item.messageListId}}' bindtap="handleDetail">
+      <view class="pic">
+        <image src="{{item.messagePattern}}" class="messagePattern"></image>
+      </view>
+      <view class="list">
+        <view class="messageHeadline" style="font-size: 39rpx;font-weight: 200;">{{item.messageHeadline}}</view>
+        <view class="messageContent" style="font-size: 30rpx">{{item.messageContent}}</view>
+        <!-- <view class="messageSt">{{item.messageSt}}</view> -->
+        <!-- <view class="messageIcon">{{item.messageIcon}}</view> -->
+      </view>
+    </view>
+  </block>
+</view>
+

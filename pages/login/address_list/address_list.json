@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "alphabet": "/components/alphabet/index"
+  }
+}

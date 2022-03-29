@@ -1,0 +1,81 @@
+<!--pages/login/homepage/homepage.wxml-->
+<view class="container">
+  <!-- 头像与个人信息 -->
+  <view class="personinfo">
+    <view class="userinfo">
+      <block wx:if="{{canIUseOpenData}}">
+        <view class="userinfo-avatar" bindtap="bindViewTap">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+      </block>
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+      </block>
+    </view>
+    <view class="nameinfo">
+      <view class="weixinming">
+        狗日的
+      </view>
+      <!-- <open-data type="userNickName"></open-data> -->
+      <view class="weixinhao">
+        微信号：17373495787
+      </view>
+    </view>
+  </view>
+
+  <!-- 服务 -->
+  <view class="fuwu">
+    <view class="imgFuwu">
+      <image src="../../../image/homepage/fuwu.png" class="serve" />
+    </view>
+    <view class="fuwuText">服务</view>
+    <view class="arrow"></view>
+  </view>
+ 
+  <!-- 收藏、朋友圈、卡包、表情 -->
+  <view class="zasui">
+    <!-- 收藏 -->
+    <view class="shouCang">
+      <image src="../../../image/homepage/shoucang.png" class="collect" />
+      <view class="shoucangText">收藏</view>
+      <view class="arrow"></view>
+    </view>
+
+    <!-- 朋友圈 -->
+    <view class="shouCang">
+      <image src="../../../image/homepage/xiangce.png" class="collect" />
+      <view class="shoucangText">朋友圈</view>
+      <view class="arrow"></view>
+    </view>
+     
+    <!-- 卡包 -->
+    <view class="shouCang">
+      <image src="../../../image/homepage/kabao.png" class="collect" />
+      <view class="shoucangText">收藏</view>
+      <view class="arrow"></view>
+    </view>
+
+    <view class="shouCang" style="border: 0;">
+      <image src="../../../image/homepage/biaoqing.png" class="collect" />
+      <view class="shoucangText">表情</view>
+      <view class="arrow"></view>
+    </view>
+    
+  </view>
+  
+  <!-- 设置 -->
+  <view class="fuwu">
+    <view class="imgFuwu">
+      <image src="../../../image/homepage/shezhi.png" class="serve" />
+    </view>
+    <view class="fuwuText">设置</view>
+    <view class="arrow"></view>
+  </view>
+</view>
+
